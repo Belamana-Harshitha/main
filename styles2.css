@@ -1,0 +1,13 @@
+.grid-container img {
+    object-fit: cover;
+    width: 100%; /* Changed from 100vh to 100% */
+    height: auto; /* Changed from fit-content to auto */
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.grid-container {
+    display: grid; /* Changed from flex to grid */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Added this line */
+    gap: 30px;
+}
